@@ -37,16 +37,16 @@ namespace luckText
             Console.WriteLine(playerName+" blev absolut aldrig lurad av en dator till att ge iväg alla sina pengar");
            Console.ReadLine(); Console.Clear();
             Console.WriteLine(playerName+" gillade verkligen boten och sa Tack");
-            if(Console.ReadLine() == "Tack"){
+            if(Console.ReadLine() == "Tack" || Console.ReadLine() == "tack"){
                 Console.WriteLine(playerName+ " du är så snäll, förlåt att jag tänkte sno dina pengar :(");
             }
             else{
-                int End = generator.Next(2);
+                int End = generator.Next(0,2);
                 if(End == 0){
                 Console.WriteLine("FUCK U");}
                 else if(End == 1){
                     Console.WriteLine("Hmm yeah I kinda hate you, waaait whats your bank?");
-                }}}
+                }}
             Console.ReadLine();
         }
     }
